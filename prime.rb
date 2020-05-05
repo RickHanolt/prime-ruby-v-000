@@ -1,9 +1,10 @@
 def prime?(number)
-    prime_check = (2..100).to_a
-    prime_check.collect do |integer|
-      while integer < number
-        number % integer == 0
-      end
+  counter = 0
+  while counter < number
+    if number % counter == 0
+      return false
     end
-    prime_check.all?(false)
+    i += 1
+  end
+  true
 end

@@ -1,10 +1,21 @@
 def prime?(number)
-  counter = 2
-  while counter < number
-    if number % counter == 0
-      return false
+  if number > 0
+    counter = 2
+    while counter < number
+      if number % counter == 0
+        return false
+      end
+      counter += 1
     end
-    counter += 1
+    true
+  elsif number < 0
+    counter = -2
+    while counter < number
+      if number % counter == 0
+        return false
+      end
+      counter -= 1
+    end
+    true
   end
-  true
 end

@@ -4,5 +4,6 @@ def prime?(number)
   elsif number < 0
 
   else
+  end
     puts "Your number is 0."
 end
